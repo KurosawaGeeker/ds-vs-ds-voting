@@ -1,12 +1,12 @@
-# Cloudflare Voting Examples
+# DS-vs-DS Voting
 
 投票网站的独立开源源码仓库，包含原站脱敏代码和读写分离参考实现。事故文章、成本审查 Skill、AGENTS.md 模板和费用计算器在 [Cloudflare Cost Playbook](https://github.com/KurosawaGeeker/cloudflare-cost-playbook) 中维护。
 
 规则仓库只引用这里，不用 submodule 或脚本自动拉取源码。需要研究或运行示例时，再单独克隆：
 
 ```sh
-git clone https://github.com/KurosawaGeeker/cloudflare-voting-examples.git
-cd cloudflare-voting-examples
+git clone https://github.com/KurosawaGeeker/ds-vs-ds-voting.git
+cd ds-vs-ds-voting
 ```
 
 ## 选择你要看的代码
