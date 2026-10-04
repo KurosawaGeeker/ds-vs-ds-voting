@@ -1,0 +1,7 @@
+{
+  "rules": [{
+    "allowed": { "origins": ["https://vote.example.com"], "methods": ["GET", "HEAD"] },
+    "exposeHeaders": ["ETag", "Age", "CF-Cache-Status"],
+    "maxAgeSeconds": 600
+  }]
+}

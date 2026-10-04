@@ -1,0 +1,14 @@
+{
+  "name": "original-voting-site-review",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check docs/app.js && node --check docs/payments.js && node --check api/worker.js && node --check api/payments.js && node --check api/dev-worker.js",
+    "test": "node --test tests/*.test.js",
+    "dev:api": "wrangler dev --local --config api/wrangler.jsonc",
+    "dev:payments": "wrangler dev --local --config api/wrangler.dev.jsonc"
+  },
+  "dependencies": {
+    "qrcode": "1.5.4"
+  }
+}

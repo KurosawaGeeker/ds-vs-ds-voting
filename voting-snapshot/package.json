@@ -1,0 +1,21 @@
+{
+  "name": "cloudflare-voting-snapshot-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "demo": "node scripts/demo.mjs",
+    "demo:check": "node scripts/smoke-demo.mjs",
+    "dev:api": "wrangler dev --local --test-scheduled --port 8787",
+    "dev:web": "wrangler dev --local --config wrangler.web.jsonc --port 8788",
+    "schema:local": "wrangler d1 execute voting-template-db --local --file schema.sql",
+    "build:check": "wrangler deploy --dry-run --outdir .build/api && wrangler deploy --dry-run --config wrangler.web.jsonc --outdir .build/web"
+  },
+  "devDependencies": {
+    "miniflare": "5.20261001.0-alpha",
+    "wrangler": "4.147.0"
+  }
+}

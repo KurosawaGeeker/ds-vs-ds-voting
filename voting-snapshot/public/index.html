@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>你更喜欢哪一个？</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/runtime-config.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>你更喜欢哪一个？</h1>
+    <div class="counts"><span><strong id="left-count">—</strong> 票</span><span><strong id="right-count">—</strong> 票</span></div>
+    <div class="bar" role="img" aria-label="投票比例"><span id="left-bar"></span></div>
+    <section class="candidates" aria-label="投票选项">
+      <article><div class="portrait" aria-hidden="true">A</div><h2>选项 A</h2><button type="button" data-choice="left">喜欢</button></article>
+      <article><div class="portrait alternate" aria-hidden="true">B</div><h2>选项 B</h2><button type="button" data-choice="right">喜欢</button></article>
+    </section>
+    <p id="results-state" role="status">正在获取票数…</p>
+    <p id="vote-state" role="status"></p>
+    <dialog id="vote-dialog">
+      <form method="dialog"><button class="close" aria-label="关闭">×</button></form>
+      <h2>确认你的选择</h2>
+      <div id="challenge"></div>
+      <button id="confirm-vote" type="button" disabled>确认投票</button>
+      <p id="challenge-state" role="status"></p>
+    </dialog>
+  </main>
+</body>
+</html>

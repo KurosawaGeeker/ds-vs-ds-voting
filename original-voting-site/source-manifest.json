@@ -1,0 +1,108 @@
+{
+  "copied_at_beijing": "2026-10-05",
+  "source_kind": "owner local worktree, not a uniquely identified peak-production release",
+  "files": [
+    {
+      "path": "api/worker.js",
+      "source_sha256": "fa2b21cf327f6ebc6ca910ced4e52b26c083b850f6da67abece4b426a80aeea0"
+    },
+    {
+      "path": "api/payments.js",
+      "source_sha256": "776d486de993fbcaae6de28f33251e78b6d2c50a3a2407249aaebd791c85ead5"
+    },
+    {
+      "path": "api/dev-worker.js",
+      "source_sha256": "a174deb0a58337c5c8b2501a2984c3fc6b9b2d5eeddca18aa450d85c8ba2f589"
+    },
+    {
+      "path": "api/schema.sql",
+      "source_sha256": "a6357d05a9c2a87f902a3504497d8c7d2609ed8116963ac9d82f1847090f8109"
+    },
+    {
+      "path": "api/payment-schema.sql",
+      "source_sha256": "0c6db0c77e4fec60fef426c2731c4ee7644f4a7fad274aadda3be5241b2358e2"
+    },
+    {
+      "path": "api/wrangler.jsonc",
+      "source_sha256": "452485625caf8860125ffd578539ecde9b3171b121363eeee570add2ba638595"
+    },
+    {
+      "path": "api/wrangler.dev.jsonc",
+      "source_sha256": "85e97ecb46c653b3166adf4a1a30bd7c9178efa2c3e14b65ff134468d00b693d"
+    },
+    {
+      "path": "docs/app.js",
+      "source_sha256": "d4c8b493f23891ea4c6f7fab3a41b4fe51ff37b3cfcdfe616487c86e5e231e48"
+    },
+    {
+      "path": "docs/payments.js",
+      "source_sha256": "f5250a2945f2f8f3da43456b9ca0384e43480870aa890b07ec78597cffaa6cc1"
+    },
+    {
+      "path": "docs/style.css",
+      "source_sha256": "f7052ca8b98bf6e5bfb98f80146524ffbacf7183280731d9ee7e5e99fffdcd3b"
+    },
+    {
+      "path": "docs/index.html",
+      "source_sha256": "208b24edaea0dfaa4afa793d8ad04de99774c1779a2372049c53d6f48f0978bc"
+    },
+    {
+      "path": "docs/runtime-config.js",
+      "source_sha256": "1511e47baaf6287bfa664bd33a45f0805efb05394b948e0eddf4d3782c4a7b8e"
+    },
+    {
+      "path": "package.json",
+      "source_sha256": "f346e8bac62f7d86bdff0d0968192ab76b15cd56a37ca58c61381ed281dfdd8d"
+    },
+    {
+      "path": "package-lock.json",
+      "source_sha256": "2bc6eb879e34c1c023ca225cb48bf2c69f70e503a10b3f7e8e1ae32cd619556c"
+    },
+    {
+      "path": "api/migrations/0001_public_totals_after_turnstile.sql",
+      "source_sha256": "e4bca15558ebfb9d338094bfee0c9404026a82d2dfbc097a4b68f1571f19efc3"
+    },
+    {
+      "path": "api/migrations/0002_vote_client_ip.sql",
+      "source_sha256": "72a0e1c87522c95eb54759dbaa99ca5a66cbef7f5868f084fa6139c2eb1a9d22"
+    },
+    {
+      "path": "api/migrations/0003_ip_vote_guard.sql",
+      "source_sha256": "2a6236cb0ce278fa837ab0c3d7766ccb63d8aee742d9a6be20c101eb21d5f30c"
+    },
+    {
+      "path": "tests/frontend.test.js",
+      "source_sha256": "6de31e6263947458ba2151dc0c00eb12730c45b26ebc11d1d9bbc84824a0fd30"
+    },
+    {
+      "path": "tests/api.test.js",
+      "source_sha256": "5fb23ed39887d3defa2a4a08de78f22b485d10a9c63d663553152a6f6503d172"
+    },
+    {
+      "path": "tests/payment-frontend.test.js",
+      "source_sha256": "5c56ae17535826aea746e882f99ec10f01cb11d0a62b75cd64524281166eace2"
+    },
+    {
+      "path": "tests/payments.test.js",
+      "source_sha256": "44d05b6b286e48b1894f774654a168ecd55394341302e01e5458d692d114f3c3"
+    },
+    {
+      "path": "tests/ip-guard.test.js",
+      "source_sha256": "a6826c28c25accb08ee1da94e4ced43e3a7050ec24d63ae5d7b4f8a8934a3fe4"
+    },
+    {
+      "path": "tests/security.test.js",
+      "source_sha256": "b5a0f4150caad61ab2824878a02bbde5314e7925f07a57472894fd61baae2702"
+    }
+  ],
+  "sanitization": [
+    "removed account_id and live D1 IDs",
+    "disabled default, preview and custom routes",
+    "disabled payments and logging by default",
+    "changed frontend API to loopback and Turnstile sitekey to official test key",
+    "replaced third-party artwork with newly authored SVG placeholders",
+    "removed referral destinations and private contact address",
+    "removed deploy scripts"
+  ],
+  "production_modified": false
+}
