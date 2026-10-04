@@ -1,6 +1,10 @@
 # DS-vs-DS Voting
+曾域名：ds-vs-ds.win
+网站截图：
+<img width="532" height="594" alt="image" src="https://github.com/user-attachments/assets/706554fe-d296-4178-8f2b-390bb1fe4487" />
 
-投票网站的独立开源源码仓库，包含原站脱敏代码和读写分离参考实现。事故文章、成本审查 Skill、AGENTS.md 模板和费用计算器在 [Cloudflare Cost Playbook](https://github.com/KurosawaGeeker/cloudflare-cost-playbook) 中维护。
+deepseek 拟人形象投票网站的独立开源源码仓库。
+包含原站脱敏代码和读写分离参考实现。事故文章、成本审查 Skill、AGENTS.md 模板和费用计算器在 [Cloudflare Cost Playbook](https://github.com/KurosawaGeeker/cloudflare-cost-playbook) 中维护。
 
 规则仓库只引用这里，不用 submodule 或脚本自动拉取源码。需要研究或运行示例时，再单独克隆：
 
